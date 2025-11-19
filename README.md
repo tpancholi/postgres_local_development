@@ -30,6 +30,18 @@
 - PostgreSQL (18.1)
 - PgAdmin4 (9.10.0)
 
+### To access pgAdmin4
+- Go to `http://localhost:5050`
+- Username: `admin@example.com` # from docker-compose.yml
+- Password: `admin` # from docker-compose.yml
+- Go to Add new server and enter the following details:
+    - Name: `local postgresql` # any name of your choice
+    - Host name/address: `postgres` # found any docker compose service name
+    - Port: `5432`
+    - Maintenance database: `postgres`
+    - Username: `myapp_user` # dev user from init scripts
+    - Password: `pa55word` # dev user password from init scripts
+
 
 ### Important commands
 - To start the container `docker-compose up -d`
