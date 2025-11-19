@@ -9,7 +9,7 @@ a.out
 *.orig
 build_src
 .flymake*
-.idea
+.idea/
 .DS_Store
 docs/_build
 docs/_static
